@@ -52,6 +52,18 @@ $greycolor: #1e2f2f;
   -moz-transition: .3s ease-in-out;
   -webkit-transition: .3s ease-in-out;
 }
+
+%form-button{
+  position: relative;
+  left: 0;
+  background: $theme;
+  font-size: 1.1em;
+  text-transform: capitalize;
+  transition: .3s ease-in-out;
+  -moz-transition: .3s ease-in-out;
+  -webkit-transition: .3s ease-in-out;
+
+}
  %button-hover{
    background: $theme;
    border:2px solid $theme;
@@ -749,22 +761,22 @@ overflow: hidden;
        width: 100%;
        height: 50px;
        transition: 1s ease;
-                    .text {
-                      background-color: $theme;
-                      color: $whitcolor;
-                      font-size: 16px;
-                      padding: 16px 32px;
-                      z-index: 10;
-                    }
-                    button{
-                     position: relative;
-                     margin: 10px;
-                     margin-top: 25px;
-                     background-color: $theme;
-                     color:$whitcolor;
-                     padding: 10px 15px;
+    .text {
+      background-color: $theme;
+      color: $whitcolor;
+      font-size: 16px;
+      padding: 16px 32px;
+      z-index: 10;
+    }
+    button{
+     position: relative;
+     margin: 10px;
+     margin-top: 25px;
+     background-color: $theme;
+     color:$whitcolor;
+     padding: 10px 15px;
 
-                    }
+    }
 
     }
 
@@ -784,6 +796,88 @@ overflow: hidden;
     }
 
 }
+
+.cover-area{
+  position: relative;
+  width: 100%;
+  height: 105vh;
+  overflow: hidden;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 0;
+  .alert{
+    position: relative;
+    z-index: 4;
+    width: 80;
+    margin: auto;
+  }
+  .form-cont, .form-cont-r{
+    margin: 0;
+    width: 35%;
+    border: 1px solid $whitcolor;
+    border-radius: 5%;
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    form{
+      border-radius: 5%;
+      z-index: 4;
+
+       select{
+         border: 0.5px solid #a6a6a6;
+         width:100%;
+         border-radius: 5%;
+         color: #595959;
+         background: transparent;
+         option{
+           color: #a6a6a6;
+         }
+       }
+    h3{
+      color: $greycolor;
+    }
+    button{
+      @extend %form-button;
+
+      &:hover{
+        @extend %button-hover;
+        opacity: 0.8;
+      }
+      &:active{
+        @extend %focus-active;
+        opacity: 0.8;
+      }
+    }
+  }
+  &::after {
+    @extend %dark;
+    background: rgba(255, 255, 255, 0.9);
+   }
+ }
+
+ .form-cont-r{
+   width: 40%;
+   top: 50%;
+   left: 67%;
+
+ &::after {
+   @extend %dark;
+   background: rgba(255, 255, 255, 0.9);
+  }
+}
+
+&::after {
+ @extend %dark;
+ background-color: rgba(15, 15, 10, 0.5);
+}
+
+}
+
+
+
 footer{
 background-color:#060d13;
 }
