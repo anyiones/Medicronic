@@ -1,26 +1,26 @@
 @import url("https://fonts.googleapis.com/css2?family=Changa:wght@300&family=Hammersmith+One&family=Mukta&family=Ruda:wght@500;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap");
-.services, .Introduction .intro-wrapper .col .img-wrap, .Introduction .intro-wrapper, .carousel, .sidenav .user-logo, header .navbar .container-fluid, header .navbar, header nav, header {
+.intro-nvb, .services, .Introduction .intro-wrapper .col .img-wrap, .Introduction .intro-wrapper, .carousel, .sidenav .user-logo, header .navbar .container-fluid, header .navbar, header nav, header {
   position: relative;
   width: 100%;
   height: auto;
   padding: 0;
 }
 
-.services:after, .Introduction .intro-wrapper .col::after, header .navbar:after, header nav:after {
+.intro-nvb:after, .services:after, .Introduction .intro-wrapper .col::after, header .navbar:after, header nav:after {
   display: table;
   content: "";
   clear: both;
 }
 
-.services .column, .Introduction .intro-wrapper .col, header .navbar .container-fluid .lower, header .navbar .container-fluid .ulist, header .navbar .container-fluid .navbar-brand, header nav .call, header nav .email, header nav .socials, header nav .login {
+.intro-nvb .accordion, .intro-nvb .step-imgs, .services .column, .Introduction .intro-wrapper .col, header .navbar .container-fluid .lower, header .navbar .container-fluid .ulist, header .navbar .container-fluid .navbar-brand, header nav .call, header nav .email, header nav .socials, header nav .login {
   width: 33.3%;
   height: auto;
   float: left;
   padding: 0;
 }
 
-.cover-area::after, .cover-area .form-cont::after, .cover-area .form-cont-r::after, .Introduction .intro-wrapper .col .img-wrap::after, .carousel .carousel-inner .carousel-item::after {
+.cover-area::after, .cover-area .form-cont::after, .cover-area .form-cont-r::after, .parallax-window:after, .Introduction .intro-wrapper .col .img-wrap::after, .carousel .carousel-inner .carousel-item::after {
   position: absolute;
   content: "";
   display: block;
@@ -481,20 +481,6 @@ header .navbar .container-fluid .menI {
   padding: 0;
   border-radius: 0;
 }
-.carousel .carousel-inner .carousel-item .parallax-window {
-  width: 100%;
-  height: 95vh;
-  margin: 0;
-  padding: 0;
-  border-radius: 0;
-  background-image: url(static/images/d2.JPG);
-  background-size: cover;
-  -webkit-background-size: cover;
-  -webkit-background-attachment: fixed !important;
-  -moz-background-attachment: fixed !important;
-  background-attachment: fixed !important;
-  background-position: center top !important;
-}
 .carousel .carousel-inner .carousel-item .carousel-caption {
   position: absolute;
   width: 70%;
@@ -613,6 +599,13 @@ header .navbar .container-fluid .menI {
   outline: none !important;
   outline: 0;
 }
+.Introduction .intro-wrapper .abt-col {
+  width: 40%;
+}
+.Introduction .intro-wrapper .into-col {
+  width: 60%;
+}
+
 .services {
   height: auto;
   padding: 0;
@@ -688,6 +681,54 @@ header .navbar .container-fluid .menI {
 .services .column .card:hover .image {
   opacity: 0.3;
 }
+.parallax-window {
+  position: relative;
+  width: 100%;
+  height: 60vh;
+  z-index: 1;
+  background: transparent;
+  -webkit-background-size: cover;
+}
+.parallax-window .text {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 5;
+  transform: translate(-50%, -50%);
+}
+.parallax-window .text h3 {
+  display: block;
+  position: relative;
+  font-size: 1.3em;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+}
+.parallax-window .text p {
+  color: #264d73;
+  text-transform: capitalize;
+  font-size: 1.3em;
+}
+.parallax-window .text p span {
+  font-weight: bold;
+}
+.parallax-window .text p a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: normal;
+  font-style: none;
+  font-variant: normal;
+}
+.parallax-window .text p a:hover {
+  font-style: none;
+  text-decoration: none;
+  opacity: 0.8;
+}
+.parallax-window:after {
+  background: rgba(15, 15, 10, 0.3);
+}
+
 .cover-area {
   position: relative;
   width: 100%;
@@ -753,6 +794,90 @@ header .navbar .container-fluid .menI {
   background-color: rgba(15, 15, 10, 0.5);
 }
 
+.intro-nvb {
+  margin-top: 30px;
+}
+.intro-nvb .tittle {
+  position: relative;
+  width: 60%;
+  padding: 10px;
+  margin: auto;
+  text-align: center;
+}
+.intro-nvb .tittle h3 {
+  color: #1e2f2f;
+  font-weight: 200;
+}
+.intro-nvb .tittle h3 span {
+  color: #264d73;
+}
+.intro-nvb .tittle hr {
+  position: relative;
+  margin: auto;
+  margin-top: 10px;
+  max-width: 100px;
+  border: 1px solid #264d73;
+}
+.intro-nvb .tittle hr span {
+  border-top: 1px dashed #264d73;
+}
+.intro-nvb .step-imgs {
+  padding: 1px;
+  width: 50%;
+  padding: 0;
+}
+.intro-nvb .step-imgs .row-card {
+  position: relative;
+  width: 100%;
+}
+.intro-nvb .step-imgs .row-card .image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+.intro-nvb .step-imgs .row-card .middle {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.intro-nvb .step-imgs .row-card .middle .text {
+  color: #264d73;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+.intro-nvb .step-imgs .row-card .middle .text h3 {
+  color: #1e2f2f;
+  font-weight: normal;
+}
+.intro-nvb .step-imgs .row-card .middle button {
+  position: relative;
+  margin: 10px;
+  margin-top: 25px;
+  background-color: #264d73;
+  color: #ffffff;
+  padding: 15px 20px;
+}
+.intro-nvb .step-imgs .row-card:hover .image {
+  opacity: 0.3;
+}
+.intro-nvb .step-imgs .row-card:hover .middle {
+  opacity: 1;
+}
+.intro-nvb .accordion {
+  padding: 10px;
+  width: 50%;
+}
+.intro-nvb .accordion .accordion-item {
+  color: #ffffff;
+}
 footer {
   background-color: #060d13;
 }

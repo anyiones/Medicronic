@@ -17,10 +17,9 @@ integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLAS
 <script type="text/javascript" src="scripting/script.js"> </script>
 <script src="jquery-1.9.1.min.js"></script>
 <script src="assets/owl-carousel/owl.carousel.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script src="../static/parallax/parallax.min.js"></script>
 <script src="../static/parallax/parallax.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<script src="/path/to/parallax.js"></script>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
 <link href="../static/MBD/css/bootstrap.min.css" rel="stylesheet">
 <link href="../static/welcome/MBD/css/MBD.min.css" rel="stylesheet">
