@@ -18,21 +18,20 @@ include ('header.php');
           <a href="#" class="fa fa-instagram"></a>
         </div>
          <div class="login">
-          <p><a href="#">Sign In </a>| <a href="#">sign Out</a></p>
+          <p><a href="#">Sign In </a>| <a href="login.php">sign Out</a></p>
          </div>
 
       </nav>
 
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#"><img src="static/images/logo.png" alt=""></a>
+    <a class="navbar-brand" href="home"><img src="static/images/logo.png" alt=""></a>
 
     <div class="collapse navbar-collapse" id="navbarScroll">
       <div class=" ulist">
-
       <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link active" aria-current="page" href="../index.php">Home</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">About</a>
@@ -102,7 +101,7 @@ include ('header.php');
 
 
   </div>
-  <a href="#">Apointment</a>
+  <a href="">Apointment</a>
   <a href="#">Create new</a>
   <a href="#">Patients</a>
   <a href="#">Manage</a>
@@ -110,7 +109,7 @@ include ('header.php');
       Menu
   </a>
     <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-      <li><a class="dropdown-item" href="#">Home</a></li>
+      <li><a class="dropdown-item" href="">Home</a></li>
       <li><a class="dropdown-item" href="#">About</a></li>
       <li><hr class="dropdown-divider">Services</li>
       <li><a class="dropdown-item" href="#">Something else here</a></li>
@@ -118,7 +117,7 @@ include ('header.php');
 
 </div>
 
-<div class="parallax-window " data-parallax="scroll" data-image-src="../static/images/p1.jpg">
+<div class="parallax-window " data-parallax="scroll" data-image-src="">
  <div class="text">
  <h3>About US</h3>
  <p> <span><a href="#">Home</a></span>/ About </p>

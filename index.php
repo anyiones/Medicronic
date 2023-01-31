@@ -61,7 +61,7 @@ integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLAS
           <a href="#" class="fa fa-instagram"></a>
         </div>
          <div class="login">
-          <p><a href="#">Sign In </a>| <a href="#">sign Out</a></p>
+          <p><a href="#">Sign In </a>| <a href="login.php">sign Out</a></p>
          </div>
 
       </nav>
